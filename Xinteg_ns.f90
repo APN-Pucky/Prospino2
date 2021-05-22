@@ -115,6 +115,7 @@ contains
     if (ii<=0) then                                            ! coupling factor alpha_s not always nlo 
        inlo = 0
        alpha_s = ALPHAS(qr,1)
+       !alpha_s = 0.099097
     else if (ii>0) then 
        inlo = 1 
        alpha_s = ALPHAS(qr,2)
@@ -487,6 +488,12 @@ contains
        icount2 = icount2+1
 
     end if
+
+    !write(*,*) alpha_s
+    !alpha_s = 0.099097
+    !alpha = 1/132.331
+
+    !write(*,*) 1/alpha
 
     if (iscaling==0)                                                                   &  ! some jacobians
          dsig = dsig * x1_jac * x2_jac
