@@ -9,7 +9,7 @@ program main
   character(len=2)                     :: final_state_in
 
 !----------------------------------------------------------------------------
-  inlo = 1       ! specify LO only[0] or complete NLO (slower)[1]           !
+  inlo = 0       ! specify LO only[0] or complete NLO (slower)[1]           !
 !                ! results: LO     - LO, degenerate squarks, decoupling on  !
 !                !          NLO    - NLO, degenerate squarks, decoupling on !
 !                !          LO_ms  - LO, free squark masses, decoupling off !
@@ -34,7 +34,7 @@ program main
 !----------------------------------------------------------------------------
 
 !----------------------------------------------------------------------------
-  final_state_in = 'nn'                                                     !
+  final_state_in = 'ns'                                                     !
 !                                                                           !
 !                   ng     neutralino/chargino + gluino                     !
 !                   ns     neutralino/chargino + squark                     !
@@ -55,8 +55,8 @@ program main
 !----------------------------------------------------------------------------
 
 !----------------------------------------------------------------------------
-  ipart1_in = 5                                                             !
-  ipart2_in = 7                                                             !
+  ipart1_in = 1                                                             !
+  ipart2_in = 1                                                             !
 !                                                                           !
 !  final_state_in = ng,ns,nn                                                !
 !  ipart1_in   = 1,2,3,4  neutralinos                                       !
