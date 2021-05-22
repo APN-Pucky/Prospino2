@@ -96,7 +96,7 @@ c   this initialization function is only needed for Cteq grids
       integer inlo
 
       if (inlo.eq.0) then 
-         call SetCtq6(4)
+         call SetCtq6(1)
 ctq5         call SetCtq5(3)
       else if (inlo.eq.1) then 
          call SetCtq6(400)
