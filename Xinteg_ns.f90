@@ -115,6 +115,7 @@ contains
     if (ii<=0) then                                            ! coupling factor alpha_s not always nlo 
        inlo = 0
        alpha_s = ALPHAS(qr,1)
+       !write(*,*) "alpha_s", alpha_s
        !alpha_s = 0.099097
     else if (ii>0) then 
        inlo = 1 
@@ -298,7 +299,7 @@ contains
           end if
 
           call COUPLING_NS_SIM(iq,ih,+1,C1)                                           ! charge conservation built into coupling routine (squark couplings)
-          call COUPLING_NS_SIM(iq,ih,-1,C2)                                           ! antisquark couplings 
+          !call COUPLING_NS_SIM(iq,ih,-1,C2)                                           ! antisquark couplings 
 
           select case (ii)
           case(-1)                                                                    ! born
@@ -490,7 +491,7 @@ contains
     end if
 
     !write(*,*) alpha_s
-    !alpha_s = 0.099097
+    !alpha_s = 0.1081
     !alpha = 1/132.331
 
     !write(*,*) 1/alpha
