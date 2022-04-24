@@ -9,7 +9,7 @@ program main
   character(len=2)                     :: final_state_in
 
 !----------------------------------------------------------------------------
-  inlo = 0       ! specify LO only[0] or complete NLO (slower)[1]           !
+  inlo = 1       ! specify LO only[0] or complete NLO (slower)[1]           !
 !                ! results: LO     - LO, degenerate squarks, decoupling on  !
 !                !          NLO    - NLO, degenerate squarks, decoupling on !
 !                !          LO_ms  - LO, free squark masses, decoupling off !
@@ -26,15 +26,15 @@ program main
 
 !----------------------------------------------------------------------------
   icoll_in = 1      ! collider : tevatron[0], lhc[1]                        !
-  energy_in = 14000 ! collider energy in GeV                                !
+  energy_in = 7000 ! collider energy in GeV                                !
 !----------------------------------------------------------------------------
 
 !----------------------------------------------------------------------------
-  i_error_in = 0    ! with central scale [0] or scale variation [1]         !
+  i_error_in = 1    ! with central scale [0] or scale variation [1]         !
 !----------------------------------------------------------------------------
 
 !----------------------------------------------------------------------------
-  final_state_in = 'ns'                                                     !
+  final_state_in = 'nn'                                                     !
 !                                                                           !
 !                   ng     neutralino/chargino + gluino                     !
 !                   ns     neutralino/chargino + squark                     !
@@ -91,8 +91,8 @@ program main
 !----------------------------------------------------------------------------
 
 !----------------------------------------------------------------------------
-  isquark1_in = 1                                                           !
-  isquark2_in = 1                                                           !
+  isquark1_in =  1                                                          !
+  isquark2_in =  1                                                         !
 !                                                                           !
 !  for LO with light-squark flavor in the final state                       !
 !  isquark1_in     =  -5,-4,-3,-2,-1,+1,+2,+3,+4,+5                         !

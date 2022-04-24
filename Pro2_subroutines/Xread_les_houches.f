@@ -404,6 +404,7 @@ c            decide what it is and read the line if mass
          if (line1.eq.' ') then
             backspace nin2
             read(nin2,*)dumi,dumr
+            print *,dumi,dumr
 
 c            array defined in Xsugra.f
             if (dumi.eq.1) then 

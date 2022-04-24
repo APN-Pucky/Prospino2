@@ -43,7 +43,7 @@ C   25/02/93 404211828  MEMBER NAME  VEGASINT (MACROS)      FVS
       iter1 = ivegas(4)
 
 ctp      acc = min(acc,1.d-4)
-      acc = 1.d-5
+      acc = 1.d-10
       iprint = 10
 
       call VEGAS(fxn,acc,idim,ipoint,iter,iprint,0)
